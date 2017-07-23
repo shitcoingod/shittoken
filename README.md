@@ -1,0 +1,2 @@
+# shittoken
+Shit Token website
