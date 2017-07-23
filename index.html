@@ -1,0 +1,78 @@
+<html>
+   <head>
+      <title>ShitToken - Get In Early</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+      <link rel="manifest" href="./manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+   </head>
+   <script> 
+      function getBalance(){
+      
+      var URL = "https://etherchain.org/api/account/0xdbd98373c5152963ae9940e0477f078bd28ac411";
+      
+      $.getJSON(URL, function (json) {
+      
+      console.log(json.data[0].balance / 1000000000000000000)
+      
+      $('#ETH').text(json.data[0].balance / 1000000000000000000)
+      $('#SHIT').text(longitude);
+      
+      });
+      
+      }
+      
+   </script>
+   <body onload="getBalance()">
+      <center>
+         <br><br><br>
+         <img src="./logo.png">
+         <br><br>
+         <h1> SHIT TOKEN </h1>
+         No fancy marketing. No hopes and dreams. No promises. 
+         <br><br>
+         There are 151 SHIT tokens, just like Pokemon. 
+         <br><br>
+         SHITs do nothing. Just like most ICOs. 
+         <br><br>
+         Don't send us your money. SHITs are worth nothing. 
+         <br><br>
+         But if you do: 
+         <br><br>
+         <hr style="width:10%">
+         <br>
+         <b> Contract Address: </b>
+         <br> <br>
+         0x6a7a43BE33ba930fE58F34E07D0ad6bA7ADB9B1F
+         <br><br>
+         <hr style="width:10%">
+         <br>
+         <b> ETH Sent: </b>
+         <br> <br>
+         <span id="ETH"> 0 </span> ETH
+         <br> <br> / 15.1 ETH
+         <br><br>
+         <hr style="width:10%">
+         <br>
+         1 SHIT = 0.1 ETH
+         <br><br>
+         <i style="font-size: 0.3em"> But don't send us money </i>
+         <br><br>
+         <a href="twitter.com">BitcoinTalk & <a href="twitter.com/shitcoingod">Twitter</a>
+   </body>
+   </center>
+</html>
